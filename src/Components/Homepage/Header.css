@@ -1,0 +1,27 @@
+.Header {
+  @apply flex flex-col;
+}
+.AbeyNavbar {
+  @apply flex justify-between  h-[123px];
+}
+.SecondaryNavbar {
+  @apply h-[50px];
+}
+.LogoImg {
+  @apply flex items-center;
+}
+.AbeyNavbarLinks {
+  @apply flex items-center p-10;
+}
+.AbeyNavbarBreadcrumbs {
+  @apply flex gap-5;
+}
+.SecondaryNavbar {
+  @apply bg-[#454342] flex justify-between;
+}
+.SecondaryNavbarStartBtn {
+  @apply flex items-center gap-5 pl-10;
+}
+.SecondaryNavbarEndBtns {
+  @apply flex items-center gap-5 pr-10;
+}
