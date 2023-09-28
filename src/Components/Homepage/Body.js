@@ -2,6 +2,9 @@ import React from "react";
 import "./Body.css";
 import { Button } from "@mui/material";
 import { Image } from "@mui/icons-material";
+import Discover from "../../Assets/discover.png";
+import Ellipse from "../../Assets/Ellipse.png";
+import Message from "../../Assets/message.png";
 
 export default function Body() {
   return (
@@ -18,13 +21,15 @@ export default function Body() {
         </div>
         <div className="body-footer">
           <div className="footer-btn">
-            <Button startIcon={<img src="" alt="icon" />}>DISCOVER MORE</Button>
+            <Button startIcon={<img src={Discover} alt="icon" />}>
+              DISCOVER MORE
+            </Button>
           </div>
-          <div className="elips-logo">
-            <img src="" alt="" />
+          <div className="ellipse-logo">
+            <img src={Ellipse} alt="" />
           </div>
           <div className="message-icon">
-            <Image />
+            <img src={Message} alt="" />
           </div>
         </div>
       </div>

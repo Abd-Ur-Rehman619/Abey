@@ -30,18 +30,21 @@ body {
 }
 
 .body-footer {
-  @apply absolute bottom-0 flex items-center;
+  @apply absolute bottom-0 flex items-center justify-between min-w-full;
 }
 
-/* .footer-btn {
-  @apply relative left-48;
-} */
-.footer-btn > Button {
-  @apply text-white;
+.footer-btn {
+  @apply relative left-48 flex items-center justify-center;
 }
-.elips-logo > img {
-  width: 30px;
-  height: 30px;
-  color: white;
-  overflow: visible !important;
+.footer-btn > Button {
+  @apply text-white border-none text-[0.8rem];
+  font-family: "TheSans B5 Plain";
+}
+
+.ellipse-logo {
+  @apply relative -left-72;
+}
+
+.message-icon {
+  @apply relative right-5;
 }
