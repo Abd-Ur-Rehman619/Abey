@@ -1,6 +1,8 @@
 .home-body {
   background: url("../../Assets/Rectangle\ 123.png") no-repeat;
   background-size: cover;
+  background-position: center;
+
   @apply h-screen;
 }
 
