@@ -64,10 +64,10 @@ export default function Header() {
     <>
       <div className="Header">
         <div className="AbeyNavbar">
-          <div className="LogoImg p-10">
+          <div className="AbeyNavbarComponents">
             <img src={Clear_Space} alt="Logo"></img>
           </div>
-          <div className="AbeyNavbarLinks">
+          <div className="AbeyNavbarComponents">
             <div className="AbeyNavbarBreadcrumbs">
               <Typography fontWeight="Medium" color="orange">
                 DISCOVER
