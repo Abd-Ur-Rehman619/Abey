@@ -7,10 +7,7 @@
 .SecondaryNavbar {
   @apply h-[50px];
 }
-.LogoImg {
-  @apply flex items-center;
-}
-.AbeyNavbarLinks {
+.AbeyNavbarComponents {
   @apply flex items-center p-10;
 }
 .AbeyNavbarBreadcrumbs {
