@@ -11,7 +11,7 @@ body {
 }
 
 .body-content {
-  @apply flex flex-col justify-start relative top-52 left-48 w-[40rem];
+  @apply flex flex-col justify-start relative top-36 left-48 w-[40rem];
   word-wrap: break-word;
 }
 
@@ -27,4 +27,21 @@ body {
 
 .body-button > Button {
   @apply text-white bg-[#9B362C] text-[13px] w-72 mt-8 font-medium gap-[10px];
+}
+
+.body-footer {
+  @apply absolute bottom-0 flex items-center;
+}
+
+/* .footer-btn {
+  @apply relative left-48;
+} */
+.footer-btn > Button {
+  @apply text-white;
+}
+.elips-logo > img {
+  width: 30px;
+  height: 30px;
+  color: white;
+  overflow: visible !important;
 }
