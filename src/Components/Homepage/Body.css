@@ -1,0 +1,24 @@
+.home-body {
+  background: url("../../Assets/Rectangle\ 123.png") no-repeat;
+  background-size: cover;
+  @apply h-screen;
+}
+
+.body-content {
+  @apply flex flex-col justify-start relative top-52 left-48 w-[40rem];
+  word-wrap: break-word;
+}
+
+.body-text p:nth-child(1) {
+  @apply text-white text-xl;
+  font-family: "TheSans B5 Plain";
+}
+
+.body-text p:nth-child(2) {
+  @apply text-white text-7xl font-medium mt-8;
+  font-family: "TheSans B7";
+}
+
+.body-button > Button {
+  @apply text-white bg-[#9B362C] text-[13px] w-72 mt-8 font-medium gap-[10px];
+}

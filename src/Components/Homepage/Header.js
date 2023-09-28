@@ -11,6 +11,7 @@ import Breadcrumbs from "@mui/material/Breadcrumbs";
 import Typography from "@mui/material/Typography";
 import Link from "@mui/material/Link";
 import Button from "@mui/material/Button";
+
 export default function Header() {
   const SecondaryNavbarStartBtn = [
     {
@@ -89,7 +90,7 @@ export default function Header() {
               <Button
                 style={SecondaryNavbarBtn}
                 key={btns.id}
-                startIcon={<img src={btns.icon} />}
+                startIcon={<img src={btns.icon} alt="" />}
               >
                 {btns.name}
               </Button>

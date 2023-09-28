@@ -2,7 +2,7 @@
   @apply flex flex-col;
 }
 .AbeyNavbar {
-  @apply flex justify-between  h-[123px];
+  @apply flex justify-between  h-[70px];
 }
 .SecondaryNavbar {
   @apply h-[50px];
