@@ -1,13 +1,13 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import Homepage from "./Components/Homepage/Homepage";
-import AbeySpecifier from "./Components/NavComponents/AbeySpecifier";
-import Discover from "./Components/NavComponents/Discover";
-import AbeyTrade from "./Components/NavComponents/AbeyTrade";
-import UserAuthentication from "./Components/UserAuthentication/UserAuthentication";
-import Cart from "./Components/NavComponents/Cart";
+import AbeySpecifier from "./Components/Homepage/components/AbeySpecifier/AbeySpecifier";
+import UserAuthentication from "./Components/Homepage/UserAuthentication/UserAuthentication";
 import AccountDetails from "./Components/AccountDetails/AccountDetails";
 import PageNotFound from "./Components/PageNotFound";
+import Discover from "./Components/Homepage/components/Discover/Discover";
+import Cart from "./Components/Homepage/components/Cart/Cart";
+import AbeyTrade from "./Components/Homepage/components/AbeyTrade/AbeyTrade";
 
 function App() {
   return (
