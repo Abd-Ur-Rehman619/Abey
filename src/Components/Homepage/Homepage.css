@@ -1,0 +1,6 @@
+.homePage {
+  height: 100vh;
+  overflow: hidden; /* Hide any potential overflow within the container */
+  display: flex;
+  flex-direction: column;
+}

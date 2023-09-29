@@ -1,7 +1,6 @@
 import React from "react";
 import "./Body.css";
 import { Button } from "@mui/material";
-import { Image } from "@mui/icons-material";
 import Discover from "../../Assets/discover.png";
 import Ellipse from "../../Assets/Ellipse.png";
 import Message from "../../Assets/message.png";

@@ -1,13 +1,9 @@
-body {
-  overflow: hidden;
-}
-
 .home-body {
   background: url("../../Assets/Rectangle\ 123.png") no-repeat;
   background-size: cover;
   background-position: center;
-
-  @apply h-screen;
+  height: calc(100vh - 70px);
+  overflow: hidden;
 }
 
 .body-content {
@@ -26,11 +22,11 @@ body {
 }
 
 .body-button > Button {
-  @apply text-white bg-[#9B362C] text-[13px] w-72 mt-8 font-medium gap-[10px];
+  @apply text-white bg-[#9B362C] text-[13px] w-72 mt-8 relative top-6;
 }
 
 .body-footer {
-  @apply absolute bottom-0 flex items-center justify-between min-w-full;
+  @apply absolute bottom-8 flex items-center justify-between min-w-full;
 }
 
 .footer-btn {
