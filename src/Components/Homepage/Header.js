@@ -9,8 +9,8 @@ import Profile from "../../Assets/Profile.png";
 import Search from "../../Assets/Search.png";
 import Breadcrumbs from "@mui/material/Breadcrumbs";
 import Typography from "@mui/material/Typography";
-import Link from "@mui/material/Link";
 import Button from "@mui/material/Button";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   const SecondaryNavbarStartBtn = [
@@ -18,16 +18,19 @@ export default function Header() {
       id: 1,
       name: "PRODUCTS",
       icon: Product,
+      link: "",
     },
     {
       id: 2,
-      name: "ABEYSHOWS",
+      name: "ABEY SHOWS",
       icon: "",
+      link: "",
     },
     {
       id: 3,
       name: "FIND A STOCKIST",
       icon: FindStock,
+      link: "",
     },
   ];
   const SecondaryNavbarEndBtns = [
@@ -35,26 +38,31 @@ export default function Header() {
       id: 1,
       name: "",
       icon: Cart,
+      link: "/cart",
     },
     {
       id: 2,
       name: "",
       icon: Heart,
+      link: "",
     },
     {
       id: 3,
       name: "",
       icon: Profile,
+      link: "/userauthentication",
     },
     {
       id: 4,
       name: "",
       icon: Search,
+      link: "",
     },
     {
       id: 5,
       name: "More",
       icon: Product,
+      link: "",
     },
   ];
   const SecondaryNavbarBtn = {
@@ -74,10 +82,10 @@ export default function Header() {
                 DISCOVER
               </Typography>
               <Breadcrumbs separator="|" aria-label="breadcrumb">
-                <Link color="black" underline="none" href="/">
+                <Link color="black" underline="none" to="/abeytrade">
                   ABY TRADE
                 </Link>
-                <Link color="black" underline="none" href="/">
+                <Link color="black" underline="none" to="/abeyspecifier">
                   ABY SPECIFIER
                 </Link>
               </Breadcrumbs>
@@ -98,13 +106,15 @@ export default function Header() {
           </div>
           <div className="SecondaryNavbarEndBtns">
             {SecondaryNavbarEndBtns.map((btns) => (
-              <Button
-                style={SecondaryNavbarBtn}
-                key={btns.id}
-                startIcon={<img src={btns.icon} alt="icon" />}
-              >
-                {btns.name}
-              </Button>
+              <Link to={btns.link}>
+                <Button
+                  style={SecondaryNavbarBtn}
+                  key={btns.id}
+                  startIcon={<img src={btns.icon} alt="icon" />}
+                >
+                  {btns.name}
+                </Button>
+              </Link>
             ))}
           </div>
         </div>
