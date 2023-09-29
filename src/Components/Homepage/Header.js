@@ -10,7 +10,7 @@ import Search from "../../Assets/Search.png";
 import Breadcrumbs from "@mui/material/Breadcrumbs";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 export default function Header() {
   const SecondaryNavbarStartBtn = [
@@ -78,16 +78,19 @@ export default function Header() {
           </div>
           <div className="AbeyNavbarComponents">
             <div className="AbeyNavbarBreadcrumbs">
-              <Typography fontWeight="Medium" color="orange">
+              <NavLink to="/discover" className="text-[orange] font-medium">
                 DISCOVER
-              </Typography>
+              </NavLink>
               <Breadcrumbs separator="|" aria-label="breadcrumb">
-                <Link color="black" underline="none" to="/abeytrade">
+                <NavLink className="text-[black] font-medium" to="/abeytrade">
                   ABY TRADE
-                </Link>
-                <Link color="black" underline="none" to="/abeyspecifier">
+                </NavLink>
+                <NavLink
+                  className="text-[black] font-medium"
+                  to="/abeyspecifier"
+                >
                   ABY SPECIFIER
-                </Link>
+                </NavLink>
               </Breadcrumbs>
             </div>
           </div>
