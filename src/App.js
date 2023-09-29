@@ -6,6 +6,8 @@ import Discover from "./Components/NavComponents/Discover";
 import AbeyTrade from "./Components/NavComponents/AbeyTrade";
 import UserAuthentication from "./Components/UserAuthentication/UserAuthentication";
 import Cart from "./Components/NavComponents/Cart";
+import AccountDetails from "./Components/AccountDetails/AccountDetails";
+import PageNotFound from "./Components/PageNotFound";
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
         <Route path="/abeytrade" element={<AbeyTrade />} />
         <Route path="/userauthentication" element={<UserAuthentication />} />
         <Route path="/cart" element={<Cart />} />
+        <Route path="/accountdetail" element={<AccountDetails />} />
+        <Route path="/*" element={<PageNotFound />} />
       </Routes>
     </div>
   );
