@@ -8,7 +8,6 @@ import Heart from "../../Assets/Heart.png";
 import Profile from "../../Assets/Profile.png";
 import Search from "../../Assets/Search.png";
 import Breadcrumbs from "@mui/material/Breadcrumbs";
-import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import { Link, NavLink } from "react-router-dom";
 
