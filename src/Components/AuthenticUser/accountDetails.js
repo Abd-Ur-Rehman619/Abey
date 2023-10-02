@@ -16,7 +16,6 @@ import {
 import React, { useState } from "react";
 import "./accountDetails.css";
 import {
-  CheckBox,
   EditOutlined,
   RadioButtonCheckedOutlined,
   RadioButtonUncheckedOutlined,
