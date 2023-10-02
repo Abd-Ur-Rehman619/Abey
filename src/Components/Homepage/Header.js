@@ -74,9 +74,7 @@ export default function Header() {
       <div className="Header">
         <div className="AbeyNavbar">
           <div className="AbeyNavbarComponents">
-            <Link to="/">
-              <img src={Clear_Space} alt="Logo"></img>
-            </Link>
+            <img src={Clear_Space} alt="Logo"></img>
           </div>
           <div className="AbeyNavbarComponents">
             <div className="AbeyNavbarBreadcrumbs">
