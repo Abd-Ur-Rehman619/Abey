@@ -5,7 +5,7 @@ import "./Homepage.css";
 import { Route, Routes } from "react-router-dom";
 import AbeySpecifier from "./components/AbeySpecifier/AbeySpecifier";
 import UserAuthentication from "./UserAuthentication/UserAuthentication";
-import UserDetails from "../AuthenticUser/userDetails";
+import AccountDetails from "../AuthenticUser/accountDetails";
 import PageNotFound from "../PageNotFound";
 import Cart from "./components/Cart/Cart";
 import AbeyTrade from "./components/AbeyTrade/AbeyTrade";
@@ -22,7 +22,7 @@ export default function Homepage() {
         <Route path="/abeytrade" element={<AbeyTrade />} />
         <Route path="/userauthentication" element={<UserAuthentication />} />
         <Route path="/cart" element={<Cart />} />
-        <Route path="/userdetail" element={<UserDetails />} />
+        <Route path="/userdetail" element={<AccountDetails />} />
         <Route path="/*" element={<PageNotFound />} />
       </Routes>
     </div>
