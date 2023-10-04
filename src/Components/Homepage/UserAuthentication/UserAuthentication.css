@@ -1,0 +1,21 @@
+.UserAuthenticationModal {
+  @apply flex justify-center items-center;
+}
+.UserAuthenticationBox {
+  @apply grid grid-cols-2 w-[1163px] h-[676px];
+}
+.SignIn {
+  @apply bg-[#F3F3F3] flex;
+}
+.CreateNewAccount {
+  @apply bg-[#FFFFFF];
+}
+.InfoSection {
+  @apply ml-20 mr-20;
+}
+h2 {
+  @apply text-[#D98736] font-bold text-lg leading-5 mb-16;
+}
+.SubmitInfo > Button {
+  @apply text-white bg-[#9B362C] font-medium text-xs tracking-[0.25rem] h-11 w-52 rounded-none mr-5;
+}
