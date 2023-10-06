@@ -32,6 +32,7 @@ export default function SignIn() {
             <InputLabel className="mb-2">Password</InputLabel>
             <OutlinedInput
               size="small"
+              type="password"
               endAdornment={
                 <InputAdornment position="start">
                   <button>

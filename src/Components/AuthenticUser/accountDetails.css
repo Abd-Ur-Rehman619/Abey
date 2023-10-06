@@ -82,7 +82,7 @@ h2 {
 }
 
 .saveChanges {
-  @apply relative top-28;
+  @apply relative top-24;
 }
 
 .saveChanges > Button {
