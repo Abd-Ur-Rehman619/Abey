@@ -1,7 +1,9 @@
 import { createSlice } from "@reduxjs/toolkit";
+import data from "../Data";
+
 export const AbeySlice = createSlice({
   name: "Abey",
-  initialState: 1,
+  initialState: data,
   reducers: {},
 });
 
