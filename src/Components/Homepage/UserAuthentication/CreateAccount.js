@@ -29,7 +29,8 @@ export default function CreateAccount() {
   function PasswordHandler(e) {
     setPassword(e.target.value);
   }
-  function RegisterHandler() {
+  function RegisterHandler(e) {
+    e.preventDefault();
     const newUsers = { Email, Password };
     const updatedUsers = [...Users, newUsers];
     localStorage.setItem("users", JSON.stringify(updatedUsers));
