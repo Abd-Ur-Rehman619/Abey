@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import {
   FormControlLabel,
@@ -15,6 +15,28 @@ import {
 } from "@mui/icons-material";
 import CloseBtn from "../../../Assets/CloseBtn.png";
 export default function CreateAccount() {
+  const [Users, setUsers] = useState([]);
+  const [Email, setEmail] = useState(null);
+  const [Password, setPassword] = useState(null);
+  useEffect(() => {
+    const storedUsers = JSON.parse(localStorage.getItem("users")) || [];
+    setUsers(storedUsers);
+  }, []);
+
+  function EmailHandler(e) {
+    setEmail(e.target.value);
+  }
+  function PasswordHandler(e) {
+    setPassword(e.target.value);
+  }
+  function RegisterHandler() {
+    const newUsers = { Email, Password };
+    const updatedUsers = [...Users, newUsers];
+    localStorage.setItem("users", JSON.stringify(updatedUsers));
+    setUsers(updatedUsers);
+    setEmail("");
+    setPassword("");
+  }
   return (
     <>
       <div className="CreateNewAccount">
@@ -32,7 +54,9 @@ export default function CreateAccount() {
           <div className="userEmail mb-8">
             <InputLabel className="mb-2">Username or email address</InputLabel>
             <OutlinedInput
+              onChange={EmailHandler}
               size="small"
+              type="email"
               endAdornment={<InputAdornment position="start" />}
             />
           </div>
@@ -41,6 +65,7 @@ export default function CreateAccount() {
             <OutlinedInput
               size="small"
               type="password"
+              onChange={PasswordHandler}
               endAdornment={
                 <InputAdornment position="start">
                   <button>
@@ -72,7 +97,7 @@ export default function CreateAccount() {
             </p>
           </div>
           <div className="SubmitInfo">
-            <Button>REGISTER</Button>
+            <Button onClick={RegisterHandler}>REGISTER</Button>
           </div>
         </div>
       </div>
