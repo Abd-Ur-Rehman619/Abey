@@ -16,8 +16,8 @@ import {
 import CloseBtn from "../../../Assets/CloseBtn.png";
 export default function CreateAccount() {
   const [Users, setUsers] = useState([]);
-  const [Email, setEmail] = useState(null);
-  const [Password, setPassword] = useState(null);
+  const [Email, setEmail] = useState("");
+  const [Password, setPassword] = useState("");
   useEffect(() => {
     const storedUsers = JSON.parse(localStorage.getItem("users")) || [];
     setUsers(storedUsers);
@@ -30,7 +30,6 @@ export default function CreateAccount() {
     setPassword(e.target.value);
   }
   function RegisterHandler(e) {
-    e.preventDefault();
     const newUsers = { Email, Password };
     const updatedUsers = [...Users, newUsers];
     localStorage.setItem("users", JSON.stringify(updatedUsers));
@@ -55,9 +54,10 @@ export default function CreateAccount() {
           <div className="userEmail mb-8">
             <InputLabel className="mb-2">Username or email address</InputLabel>
             <OutlinedInput
-              onChange={EmailHandler}
               size="small"
               type="email"
+              value={Email}
+              onChange={EmailHandler}
               endAdornment={<InputAdornment position="start" />}
             />
           </div>
@@ -66,6 +66,7 @@ export default function CreateAccount() {
             <OutlinedInput
               size="small"
               type="password"
+              value={Password}
               onChange={PasswordHandler}
               endAdornment={
                 <InputAdornment position="start">

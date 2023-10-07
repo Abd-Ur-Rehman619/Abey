@@ -108,7 +108,7 @@ export default function Header() {
           </div>
           <div className="SecondaryNavbarEndBtns">
             {SecondaryNavbarEndBtns.map((btns) => (
-              <Link to={btns.link}>
+              <Link key={btns.id} to={btns.link}>
                 <Button
                   style={SecondaryNavbarBtn}
                   key={btns.id}
