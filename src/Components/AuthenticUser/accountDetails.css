@@ -31,11 +31,11 @@
 }
 
 h2 {
-  @apply text-[#D98736] font-bold;
+  @apply text-[#D98736] font-bold mb-0;
 }
 
 .detail-form {
-  @apply border-b-2 border-solid w-full h-[26rem] relative top-10 flex flex-col;
+  @apply border-b-2 border-solid w-full h-[26rem] relative top-12 flex flex-col;
 }
 
 .fullName {
@@ -70,7 +70,7 @@ h2 {
 }
 
 .forgotPassword-stack {
-  @apply border-b-2 border-solid relative top-11 h-[18rem]  justify-evenly;
+  @apply border-b-2 border-solid relative h-[18rem]  top-8 justify-evenly;
 }
 
 .forgotPassword {

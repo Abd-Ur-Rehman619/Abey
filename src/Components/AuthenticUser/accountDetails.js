@@ -93,7 +93,7 @@ export default function AccountDetails() {
                     </FormHelperText>
                   </div>
                   <div className="email">
-                    <InputLabel>Account name</InputLabel>
+                    <InputLabel>Email address</InputLabel>
                     <OutlinedInput
                       size="small"
                       type="email"
