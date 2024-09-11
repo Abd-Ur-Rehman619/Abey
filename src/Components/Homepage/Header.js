@@ -63,6 +63,7 @@ export default function Header() {
       icon: Product,
       link: "",
     },
+    
   ];
   const SecondaryNavbarBtn = {
     color: "#f8fafc",
